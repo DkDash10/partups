@@ -1,0 +1,334 @@
+a{
+    color: black;
+}
+.mx-5 {
+    margin-right: 3rem!important;
+    margin-left: 3rem!important;
+}
+.badge{
+    font-weight: 550;
+}
+.container{
+    margin-top: 20px;
+}
+
+/* Scrollable Container--------------------------------------------------------------------------------------- */
+.recomm{
+    margin-top: 25px;
+}
+  
+
+.horiBoxScroll{
+    display: flex;
+    max-height: 400px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+/* .horiBoxScroll::-webkit-scrollbar-thumb {
+    background-color: rgba(227, 158, 255, 0.808);
+    border-radius: 30px;
+    border: 4px solid white;
+} */
+.horiBoxScroll .item{
+    height: 350px;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.card{
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0px rgba(92, 92, 92, 0.5);
+}
+.card img{
+    height: 150px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.h5, h5 {
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+/* MenuBar-------------------------------------------------------------------------------------------------- */
+.menuBar{
+    /* background-image: linear-gradient(to bottom right, rgb(93, 255, 201), rgb(202, 255, 79)); */
+    background: #1a1c1d;
+    border-radius: 40px;
+    display: flex;
+}
+
+.menuBar .btn{
+    background-image: linear-gradient(to bottom right, rgb(93, 255, 201), rgb(202, 255, 79));
+    border-radius: 0px 0px 20px 20px;
+    color: #1a1c1d;
+    font-weight: 700;
+    margin: 10px 40px;
+    width: 80%;
+}
+.menuBar #country{
+    overflow-y: scroll;
+    height: 400px;
+    width: 200px;
+    background-image: linear-gradient(to bottom right, rgb(172, 255, 227), rgb(227, 255, 161));
+    border-radius: 20px;
+}
+.menuBar .dropdown-menu{
+    background-image: linear-gradient(to bottom right, rgb(166, 255, 225), rgb(229, 255, 168));
+    border-radius: 20px;
+}
+.menuBar .dropdown-menu button{
+    color: black;
+    font-weight: 500;
+}
+.menuBar #skillSORT input{
+    padding: 0px 10px;
+    border-radius: 20px;
+    margin-left: 5px;
+    font-size: 14px;
+    border: 1px solid greenyellow;
+    box-shadow: 0px 0px 15px 2px greenyellow;
+}
+.menuBar #skillSORT i{
+    color: black;
+    padding: 8px 0px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Feed----------------------------------------------------------------------------------------------------- */
+.postDabba .itemsss{
+    /* background: rgb(255, 0, 0); */
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+.postDabba .itemsss img{
+    border: 1px solid rgb(199, 199, 199);
+    height: 370px;
+    /* width: 80%;       for two columns of posts */
+    width: 40%;
+}
+.postDabba .itemsss .head{
+    display: flex;
+}
+.postDabba .itemsss .saveBtn{
+    font-size: 40px;
+    cursor: pointer;
+}
+.postDabba .itemsss .head img{
+    cursor: pointer;
+    height:40px;
+    width: 40px;
+    border-radius: 50px;
+    border: 2px solid rgb(255, 157, 173);
+}
+.postDabba .itemsss .head p{
+    padding: 3px;
+}
+.postDabba .itemsss .head small{
+    margin-top: 10px;
+}
+/* 
+.midContent{
+    flex-direction: column;
+} */
+
+.reaction{
+    display: flex;
+    margin: 10px;
+}
+.reaction i{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+.reaction .btn{
+    background-color: rgb(202, 255, 79);
+    border-radius: 20px;
+    margin-right: 10px;
+    width: 24%;
+}
+/* .reaction .btnMessage{
+    margin-top: 5px;
+} */
+
+
+
+
+
+
+/* Media Query------------------------------------------------------------------------------------------------ */
+@media (max-width: 992px){
+    .postDabba .itemsss img{
+        border: 1px solid rgb(199, 199, 199);
+        /* height: 300px; */
+        height: 62%;
+        width: 45%;
+    }
+}
+@media (max-width: 768px){
+    .postDabba .itemsss img{
+        height: 62%;
+        width: 60%;
+    }
+    .menuBar .btn{
+        margin: 10px 30px;
+        width: 70%;
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 700px){
+    .recomm{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .horiBoxScroll{
+        max-height: 380px;
+    }
+    .horiBoxScroll .item{
+        height: 300px;
+        min-width: 170px;
+        margin: 10px;
+    }
+
+    .card{
+        height: 285px;
+        width: 180px;
+    }
+    .card img{
+        height: 125px;
+        width: 170px;
+        padding: 0%;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .h5, h5 {
+        font-size: 1rem;
+    }
+    .small, small {
+        font-size: 0.75em;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0rem;
+    }
+    .badge {
+        padding: .2em .8em;
+        font-size: 0.75em;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 570px){
+    .postDabba .itemsss img{
+        height: 50%;
+        width: 70%;
+    }
+    .menuBar .btn{
+        margin: 10px 15px;
+        width: 90%;
+        font-weight: 400;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+    .menuBar #country{
+        height: 300px;
+        width: 150px;
+    }
+    .menuBar .dropdown-menu{
+        height: auto;
+        width: auto;
+    }
+    .menuBar .dropdown-menu a{
+        font-weight: 500;
+        font-size: 12px;
+    }
+}
+
+
+
+@media (max-width: 450px){
+    .recomm{
+        font-size: 20px;
+    }
+    .horiBoxScroll{
+        max-height: 320px;
+    }
+    .horiBoxScroll .item{
+        height: 270px;
+        min-width: 160px;
+        margin: 10px;
+    }
+
+    .card{
+        height: 255px;
+        width: 150px;
+        border-radius: 10px;
+    }
+    .card img{
+        height: 115px;
+        width: 160px;
+        padding: 0%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .h5, h5 {
+        font-size: 0.8rem;
+    }
+    .small, small {
+        font-size: 0.6em;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0rem;
+    }
+    .badge {
+        padding: .15em .5em;
+        font-size: 0.6em;
+        font-weight: 400;
+    }
+    .postDabba .itemsss img{
+        /* height: 320px; */
+        height: 65%;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .mx-5 {
+        margin-right: 0rem!important;
+        margin-left: 0rem!important;
+    }
+    .menuBar .btn {
+        margin: 3px 2px;
+        width: 95%;
+        font-weight: 700;
+        font-size: 9.5px;
+    }
+    /* .menuBar #country{
+        height: 230px;
+        width: 120px;
+    } */
+    .menuBar .dropdown-menu{
+        height: auto;
+        width: auto;
+        font-size: 12px;
+    }
+    .menuBar #skillSORT input{
+        font-size: 10px;
+    }
+    .menuBar .dropdown-menu a{
+        font-weight: 600;
+        font-size: 10px;
+    }
+}

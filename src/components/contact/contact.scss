@@ -1,0 +1,17 @@
+  //contact css
+  .btn-2{
+    width:110px;
+    height: 40px;
+    border: 2px solid rgb(50,255,255);
+    color: white;
+    background-color: rgb(0,230,255);
+    border-radius: 4px;
+}
+.btn-2:hover{
+  box-shadow: inset 110px 0 0 0  rgb(0,255,255);
+  cursor: pointer;
+}
+.contact-row{
+  width: 1315px;
+ margin-left: 100px;
+}

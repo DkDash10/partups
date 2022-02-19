@@ -1,0 +1,428 @@
+a{
+    color: black;
+}
+p {
+    margin-bottom: 0rem;
+}
+.mx-5 {
+    margin-right: 3rem!important;
+    margin-left: 3rem!important;
+}
+.badge{
+    font-weight: 550;
+}
+.container{
+    margin-top: 20px;
+}
+.dropdown-menu{
+    min-width: 7rem;
+}
+.card-img-top {
+    width: 45%;
+}
+
+/* Scrollable Container--------------------------------------------------------------------------------------- */
+.recomm{
+    margin-top: 25px;
+}
+  
+
+.horiBoxScroll{
+    display: flex;
+    max-height: 400px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+/* .horiBoxScroll::-webkit-scrollbar-thumb {
+    background-color: rgba(227, 158, 255, 0.808);
+    border-radius: 30px;
+    border: 4px solid white;
+} */
+.horiBoxScroll .item{
+    height: 350px;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.card{
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0px rgba(92, 92, 92, 0.5);
+}
+.card img{
+    height: 150px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.h5, h5 {
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+/* MenuBar-------------------------------------------------------------------------------------------------- */
+.menuBar{
+    /* background-image: linear-gradient(to bottom right, rgb(93, 255, 201), rgb(202, 255, 79)); */
+    background: #1a1c1d;
+    border-radius: 40px;
+    display: flex;
+}
+
+.menuBar .btn{
+    background-image: linear-gradient(to bottom right, rgb(93, 255, 201), rgb(202, 255, 79));
+    border-radius: 15px;
+    color: #1a1c1d;
+    font-weight: 700;
+    margin: 10px 20px;
+    width: 95%;
+}
+.menuBar #country{
+    overflow-y: scroll;
+    height: 400px;
+    width: 200px;
+    background-image: linear-gradient(to bottom right, rgb(172, 255, 227), rgb(227, 255, 161));
+    border-radius: 20px;
+}
+.menuBar .dropdown-menu{
+    background-image: linear-gradient(to bottom right, rgb(166, 255, 225), rgb(229, 255, 168));
+    border-radius: 20px;
+    height: auto;
+    width: 180px;
+}
+.menuBar .dropdown-menu button{
+    color: black;
+    font-weight: 500;
+}
+.menuBar #skillSORT input{
+    padding: 0px 5px;
+    border-radius: 10px;
+    height: 32px;
+    margin-left: 5px;
+    font-size: 13px;
+    border: 1px solid greenyellow;
+    /* box-shadow: 0px 0px 15px 2px greenyellow; */
+}
+.menuBar #skillSORT i{
+    color: black;
+    padding: 8px 0px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Feed----------------------------------------------------------------------------------------------------- */
+.itemsss{
+    /* background: rgb(255, 0, 0); */
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+.itemsss img{
+    border: 1px solid rgb(199, 199, 199);
+    height: 370px;
+    /* width: 80%;       for two columns of posts */
+    width: 40%;
+}
+.itemsss .head{
+    display: flex;
+}
+.itemsss .saveBtn{
+    font-size: 40px;
+    cursor: pointer;
+}
+.itemsss .head img{
+    cursor: pointer;
+    height:40px;
+    width: 40px;
+    border-radius: 50px;
+    border: 2px solid rgb(255, 157, 173);
+}
+.itemsss .head p{
+    padding: 3px;
+}
+.itemsss .head small{
+    margin-top: 10px;
+}
+/* 
+.midContent{
+    flex-direction: column;
+} */
+
+.reaction{
+    display: flex;
+    margin: 10px;
+}
+.reaction i{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+.reaction .btn{
+    background-color: rgb(194, 255, 52);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    margin-right: 10px;
+    width: 24%;
+}
+.modal-content{
+    /* background-color: rgba(152, 240, 255, 0.794); */
+    background-color: rgba(206, 255, 247, 0.774);
+    border-radius: 25px;
+}
+.modal-content .modal-header .modal-title{
+    color: #1a1c1d;
+}
+.modal-content .modal-body .rewardItem{
+    border: 2px solid rgba(182, 101, 101, 0);
+    margin-bottom: 4px;
+    padding-top: 4px;
+}
+.modal-content .modal-body .rewardItem:hover{
+    border-bottom: 2px solid rgba(29, 29, 29, 0.815);
+    /* box-shadow: inset 2px 2px 2px 2px rgb(182, 255, 47); */
+}
+.modal-content .modal-body .rewardItem img{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.modal-content .modal-body .rewardItem p{
+    font-size: 12px;
+    color: black;
+}
+.activeReward{
+    padding: 7px;
+    background-image: linear-gradient(to bottom right, rgb(166, 255, 225), rgb(229, 255, 168));
+    border-radius: 5px;
+}
+.modal-footer .btn{
+    background-color: rgb(194, 255, 52);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    width: 100%;
+}
+/* .reaction .btnMessage{
+    margin-top: 5px;
+} */
+
+
+
+
+
+
+/* Media Query------------------------------------------------------------------------------------------------ */
+@media (max-width: 992px){
+    .itemsss img{
+        border: 1px solid rgb(199, 199, 199);
+        /* height: 300px; */
+        height: 62%;
+        width: 45%;
+    }
+    .menuBar #country{
+        height: 300px;
+        width: 180px;
+        font-size: 14px;
+    }
+    .menuBar .dropdown-menu{
+        font-size: 14px;
+        width: 150px;
+    }
+}
+@media (max-width: 768px){
+    .itemsss img{
+        height: 62%;
+        width: 60%;
+    }
+    .menuBar .btn{
+        margin: 10px 30px;
+        width: 80%;
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 700px){
+    .recomm{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .horiBoxScroll{
+        max-height: 380px;
+    }
+    .horiBoxScroll .item{
+        height: 300px;
+        min-width: 170px;
+        margin: 10px;
+    }
+
+    .card{
+        height: 300px;
+        width: 180px;
+    }
+    .card img{
+        height: 120px;
+        width: 180px;
+        padding: 0%;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .h5, h5 {
+        font-size: 1rem;
+    }
+    .small, small {
+        font-size: 0.75em;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0rem;
+    }
+    .badge {
+        padding: .2em .8em;
+        font-size: 0.75em;
+        font-weight: 500;
+    }
+    .menuBar #country{
+        height: 300px;
+        width: 150px;
+        font-size: 13px;
+    }
+    .menuBar .dropdown-menu{
+        font-size: 13px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 570px){
+    .itemsss img{
+        height: 50%;
+        width: 70%;
+    }
+    .itemsss .midContent .card-text{
+        font-size: 13px;
+    }
+    .itemsss .reaction button{
+        font-size: 10px;
+    }
+    .menuBar .btn{
+        margin-left: 5%;
+        width: 90%;
+        font-weight: 400;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+    .menuBar #country{
+        height: 250px;
+        width: 130px;
+        font-size: 12px;
+        font-weight: 650px;
+    }
+    .menuBar .dropdown-menu{
+        font-size: 12px;
+        font-weight: 650px;
+        width: 130px;
+    }
+}
+
+
+
+@media (max-width: 450px){
+    .itemsss .midContent .card-text{
+        font-size: 12px;
+    }
+    .recomm{
+        font-size: 20px;
+    }
+    .horiBoxScroll{
+        max-height: 320px;
+    }
+    .horiBoxScroll .item{
+        height: 270px;
+        min-width: 160px;
+        margin: 10px;
+    }
+
+    .card{
+        height: 270px;
+        width: 150px;
+        border-radius: 10px;
+    }
+    .card img{
+        height: 100px;
+        width: 150px;
+        padding: 0%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .h5, h5 {
+        font-size: 0.8rem;
+    }
+    .small, small {
+        font-size: 0.6em;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0rem;
+    }
+    .badge {
+        padding: .15em .5em;
+        font-size: 0.6em;
+        font-weight: 400;
+    }
+    .itemsss img{
+        /* height: 320px; */
+        height: 65%;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .mx-5 {
+        margin-right: 0rem!important;
+        margin-left: 0rem!important;
+    }
+    .menuBar .btn {
+        margin: 3px 2px;
+        width: 95%;
+        font-weight: 700;
+        font-size: 9.5px;
+    }
+    .menuBar #country{
+        height: 230px;
+        width: 120px;
+        font-size: 10px;
+        font-weight: 500px;
+        border-radius: 5px;
+    }
+    .menuBar .dropdown-menu{
+        width: 80px;
+        font-size: 10px;
+        font-weight: 500px;
+        border-radius: 10px;
+    }
+    .menuBar #skillSORT input{
+        font-size: 10px;
+        height: 25px;
+    }
+    .modal-content .modal-body .rewardItem img{
+        height: 50px;
+        width: 50px;
+    }
+    .modal-content .modal-body .rewardItem p{
+        font-size: 9px;
+    }
+    .activeReward{
+        padding: 5px;
+        background-image: linear-gradient(to bottom right, rgb(166, 255, 225), rgb(229, 255, 168));
+        border-radius: 15px;
+    }
+    .modal-footer .btn{
+        padding: 2px;
+        font-size: 11px;
+        width: 100%;
+    }
+}

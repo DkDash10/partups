@@ -1,0 +1,52 @@
+label{
+    width: 15%;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+input{
+    height: 40px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.btn{
+    border-radius: 0%;
+    width: 100px;
+    transition: 0.5s;
+}
+.btn:hover{
+    border-radius: 5px;
+    background-color: rgb(185, 65, 255);
+}
+
+
+@media (max-width: 990px){
+    label{
+        padding-top: 6px;
+    } 
+    .form-control{
+        font-size: 0.85rem;
+    }
+}
+
+
+@media (max-width: 768px){
+    label{
+        padding-top: 6px;
+        width: 20%;
+    } 
+    .form-control{
+        font-size: 0.85rem;
+    }
+}
+@media (max-width: 500px){
+    label{
+        padding-top: 6px;
+        padding-right: 10px;
+        width: auto;
+    }
+    h4{
+        font-size: 16px;
+    }
+}

@@ -1,4 +1,4 @@
-/* label{
+label{
     width: 30%;
     font-size: 15px;
 }
@@ -30,9 +30,9 @@ input{
 }
 .modal-content{
     /* background-color: rgb(233, 200, 255); */
-    /* background-image: linear-gradient(to bottom right, rgb(212, 175, 255), rgb(255, 255, 255)); */
+    background-image: linear-gradient(to bottom right, rgb(212, 175, 255), rgb(255, 255, 255));
     /* background-image: url(https://images.squarespace-cdn.com/content/v1/593e7428a5790aa6651c2a84/1601053564083-70CE0J65R371EYKWWT2N/Collecting+Social+Media+Data.png?format=750w); */
-    /* background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
 
 }
@@ -69,7 +69,7 @@ input{
         height: 30px;
         font-size: 10px;
     }
-} */
+}
 
 
 
@@ -121,4 +121,4 @@ input{
     .container-sm .radioCollection{
         flex-direction: column;
     }
-} */ 
+} */

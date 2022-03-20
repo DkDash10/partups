@@ -1,48 +1,51 @@
-import mongoose from 'mongoose';
-const { Schema } = mongoose;
-// var jwt = require('jsonwebtoken');
+import mongoose from "mongoose";
+// const { Schema } = mongoose;
 
+const UserSchema = mongoose.Schema({
+  username: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+  id: {
+    type: String,
+  },
+  profilepic: {
+    type: String,
+    required: false,
+    default:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT8MYTIuevVmECOFAAQMaQDCsR8FIDBW_anA&usqp=CAU",
+  },
+  age: {
+    type: String,
+    // required: true,
+  },
+  gender: {
+    type: String,
+    // required: true,
+  },
+  mainskill: {
+    type: String,
+    // required: true,
+  },
+  bio: {
+    type: String,
+    // required: false,
+  },
+});
 
-const UserSchema = new Schema({
-    username:{
-        type: String,
-        required: true
-    },
-    email:{
-        type: String,
-        required: true,
-        unique:true
-    },
-    password:{
-        type:String,
-        required: true
-    },
-    date:{
-        type: Date,
-        default: Date.now
-
-    },
-    // tokens:[
-    //     {
-    //         token:{
-    //             type:String,
-    //             required: true
-    //         }
-    //     }
-    // ]
-
-  });
-
-//   UserSchema.methods.generateAuthToken= async function(){
-//       try{
-//           let token = jwt.sign({_id: this._id}, process.env.JWT_SECRET);
-//           this.tokens= this.tokens.concat({token: token})
-//          await this.save();
-//          return token;
-//       }catch(err){
-//           console.log(err);
-//       }
-//   }
-  const User= mongoose.model('user',UserSchema);
+const User = mongoose.model("user", UserSchema);
 
 export default User;

@@ -135,7 +135,7 @@ a{
     height:40px;
     width: 40px;
     border-radius: 50px;
-    border: 2px solid rgb(255, 157, 173);
+    /* border: 2px solid rgb(255, 157, 173); */
 }
 .postDabba .itemsss .head p{
     padding: 3px;

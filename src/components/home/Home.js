@@ -10,6 +10,11 @@ import { useSelector } from 'react-redux';
 
 export const Home = ( props, {post}) => {
     const posts = useSelector((state) => state.posts);
+    // console.log(posts)
+    // const {
+    //     caption, skills, selectedFile
+    // } = posts
+    //  console.log(skills)
 
     function capitalizeFirstLetter(string){
         return string.charAt(0).toUpperCase() + string.slice(1);
@@ -262,7 +267,7 @@ return (
         <div className="container-sm my-5">
         <div className="menuBar d-flex justify-content-evenly mb-3" style={props.menuStyle}>
 
-                <div id="countrySORT" className="dropdown">
+                {/* <div id="countrySORT" className="dropdown">
                     <button className="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Country
                     </button>
@@ -520,7 +525,7 @@ return (
                         <li><button className="dropdown-item">Zambia</button></li>
                         <li><button className="dropdown-item">Zimbabwe</button></li>
                     </ul>
-                </div>
+                </div> */}
 
                 <div id="skillSORT" className="dropdown">
                     <button className="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -554,8 +559,9 @@ return (
 
     {/* Feed------------------------------------------------------------------------------------------------- */}
         <div className="container-sm my-5">
-        {posts.map((post) => (
-                 <Post  post={post}  />
+        {posts?.map((post) => (
+
+                 <Post  key={post._id} post={post} />
                 
 
                  ))}

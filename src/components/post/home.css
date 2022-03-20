@@ -132,7 +132,7 @@ p {
     border: 1px solid rgb(199, 199, 199);
     height: 370px;
     /* width: 80%;       for two columns of posts */
-    width: 40%;
+    width: auto;
 }
 .itemsss .head{
     display: flex;
